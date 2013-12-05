@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.tekniti.skilltransit.service.model.impl.SkillCategoryModelImpl">
+		<attributes>
+			<id name="primaryId">
+				<column name="ID" />
+			</id>
+			<basic name="name" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.tekniti.skilltransit.service.model.impl.SkillSubCategoryModelImpl">
+		<attributes>
+			<id name="primaryId">
+				<column name="ID" />
+			</id>
+			<basic name="name" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.tekniti.skilltransit.service.model.impl.UserDetailsModelImpl">
+		<attributes>
+			<id name="userId">
+				<column name="USER_ID" />
+			</id>
+			<basic name="hourlyRate">
+				<column name="HOURLY_RATE" />
+			</basic>
+			<basic name="zipCode" />
+			<basic name="category" />
+			<basic name="client" />
+			<basic name="commute" />
+			<basic name="skill" />
+			<basic name="state">
+				<column name="STATE_" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.tekniti.skilltransit.service.model.impl.UserSkillsModelImpl">
+		<attributes>
+			<id name="primId">
+				<column name="ID" />
+			</id>
+			<basic name="name" />
+			<basic name="user_id" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.tekniti.skilltransit.service.model.impl.SkillCategoryImpl" name="SkillCategory">
+		<table name="skill_category" />
+		<attributes />
+	</entity>
+	<entity class="com.tekniti.skilltransit.service.model.impl.SkillSubCategoryImpl" name="SkillSubCategory">
+		<table name="skill_subcategory" />
+		<attributes />
+	</entity>
+	<entity class="com.tekniti.skilltransit.service.model.impl.UserDetailsImpl" name="UserDetails">
+		<table name="user_details" />
+		<attributes />
+	</entity>
+	<entity class="com.tekniti.skilltransit.service.model.impl.UserSkillsImpl" name="UserSkills">
+		<table name="user_skills" />
+		<attributes />
+	</entity>
+</entity-mappings>

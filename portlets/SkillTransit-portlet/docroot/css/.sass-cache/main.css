@@ -1,0 +1,300 @@
+.geh_group_select_heading {
+  background: url("/geh-search-portlet/images/bg_fullWidthHeader.jpg") repeat-x scroll 0 0 transparent;
+  height: 68px;
+  line-height: 68px;
+  padding: 0 20px; }
+
+.geh_group_select_cleardiv {
+  clear: both; }
+
+.geh_group_select_heading span {
+  color: #333333;
+  font-size: 19px; }
+
+.geh_group_select_container {
+  width: auto;
+  clear: left;
+  padding: 15px; }
+
+.geh_group_select_container label {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 100px; }
+
+.geh_group_select_label {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 100px; }
+
+.geh_rules_group_col1 {
+  padding: 5px;
+  width: 50px; }
+
+.geh_group_select_table1_wrap {
+  margin: 10px;
+  padding: 10px;
+  background: none repeat scroll 0 0 #F2F2F2; }
+
+.geh_group_select_hdr_row {
+  padding-top: 10px; }
+
+.geh_group_select_table1 {
+  margin: 10px; }
+
+.geh_rules_group_col3 {
+  padding-left: 10px; }
+
+.geh_rules_group_title1 {
+  text-decoration: underline; }
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin-top: 25px; }
+
+#dialog-form {
+  background: none repeat scroll 0 0 #FAFAFA; }
+
+.ui-dialog .ui-state-error {
+  padding: .3em; }
+
+#geh_rules_main {
+  width: auto;
+  max-width: 800px;
+  min-height: auto; }
+
+/* round buttons
+.geh_group_select_table1 input[type="button"] {
+	border-radius: 10px 10px 10px 10px;
+    height: 20px;
+    border-width: 1px;
+}
+*/
+#geh_rules_main div {
+  margin: 3px;
+  padding: 3px;
+  width: auto; }
+
+.geh_rules_textarea, #geh_group_select_error_messages {
+  display: none; }
+
+#geh_rules_content_div {
+  clear: both; }
+
+.geh_rules_name {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+input.geh_rules_submit_button {
+  float: left; }
+
+div.geh_rules_display_line {
+  width: auto;
+  clear: left;
+  height: 45px; }
+
+div.geh_rules_row_column {
+  width: 18%;
+  float: left;
+  height: 30px;
+  margin: 0 3px 0 3px;
+  padding: 0 3px 0 3px; }
+
+div.geh_rules_display_attribute {
+  clear: left;
+  background-color: #cccccc; }
+
+div.geh_rules_display_condition {
+  background-color: #cccccc; }
+
+div.geh_rules_display_value {
+  background-color: #cccccc; }
+
+div.geh_rules_constructor_line {
+  width: auto;
+  clear: left;
+  height: 45px; }
+
+div.geh_rules_constructor_attribute {
+  width: 200px;
+  float: left;
+  clear: left;
+  height: 35px; }
+
+div.geh_rules_constructor_condition {
+  width: 200px;
+  float: left;
+  height: 35px; }
+
+div.geh_rules_constructor_value {
+  width: 200px;
+  float: left;
+  height: 35px; }
+
+div.geh_rules_constructor_buttons {
+  width: 100px;
+  float: left;
+  height: 35px; }
+
+span.geh_rules_title {
+  font-size: 150%; }
+
+div.geh_rules_content_title {
+  font-size: 150%; }
+
+div#geh_rules_content {
+  background-color: #ddd; }
+
+div#geh_rules_display_1 .geh_rules_display_buttons {
+  border: none !important; }
+
+.geh_rules_display_line:first-child {
+  display: none; }
+
+.geh_rules_display {
+  display: none; }
+
+#geh_rules_creator {
+  background-color: #ddd; }
+
+#geh_rules_expression {
+  width: 400px; }
+
+#geh_rules_radio_advanced_text {
+  margin-right: 10px; }
+
+#geh_group_select_submit_div {
+  vertical-align: middle;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px; }
+
+#geh_group_select_portlets {
+  width: 280px; }
+
+#geh_group_select_portlets li {
+  list-style-type: none;
+  padding: 5px; }
+
+#geh_group_select_portlets input {
+  margin-right: 5px; }
+
+#geh_group_select_group_name_err, #geh_group_select_group_desc_err, #geh_group_select_group_rules_err, #geh_group_select_group_verify_err {
+  color: red;
+  font-weight: bold; }
+
+.geh_group_select_group_rules_title {
+  font-weight: bold;
+  margin: 10px 0 0 0px; }
+
+.geh_group_select_verify {
+  display: inline-block;
+  margin-left: 25px; }
+
+.geh_group_select_input_fields {
+  width: 200px; }
+
+.geh_group_select_input_tags {
+  width: 99%; }
+
+#geh_group_select_verify_group {
+  display: inline-block;
+  margin-left: 5px; }
+
+#geh_group_select_membership li {
+  margin-right: 5px;
+  list-style-type: none;
+  padding: 5px; }
+
+#geh_group_select_membership input {
+  margin-right: 5px; }
+
+/* CSS for typeahead section */
+.geh_group_select_typeahead_box1 {
+  width: 50%;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  border: 1px solid;
+  border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+  background-color: #FFF;
+  min-height: 18px;
+  float: left; }
+
+ul.geh_group_select_typeahead_dropdown3 {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; }
+
+ul.geh_group_select_typeahead_dropdown3 li {
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: normal;
+  color: #000;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #666;
+  width: 100%;
+  float: left;
+  cursor: pointer; }
+
+ul.geh_group_select_typeahead_dropdown3 li span.srchUserName, ul.geh_group_select_typeahead_dropdown3 li span.srchJobTitle {
+  display: block;
+  float: left;
+  padding: 5px; }
+
+ul.geh_group_select_typeahead_box2 li.geh_group_select_typeahead_list input[type="text"] {
+  background-image: none;
+  background: #eef;
+  border: medium none;
+  width: 100px; }
+
+.geh_group_select_typeahead_dropdown2 {
+  margin-left: 160px;
+  border: 1px solid;
+  border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  background: #fff; }
+
+ul.geh_group_select_typeahead_box2 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px; }
+
+ul.geh_group_select_typeahead_box2 li {
+  float: left; }
+
+ul.geh_group_select_typeahead_box2 li.addedLst {
+  margin: 0px 5px 3px 0px;
+  padding: 0px 5px 0px 5px;
+  display: block;
+  float: left;
+  background: #ccc;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px 4px 4px 4px; }
+
+ul.geh_group_select_typeahead_box2 li.geh_group_select_typeahead_list {
+  background: none;
+  border: medium none; }
+
+.geh_group_select_typeahead_dropdown1 {
+  margin: 0px;
+  padding: 0px;
+  clear: both; }
+
+ul.geh_group_select_typeahead_box2 li a {
+  margin: 0px 5px 0px 5px; }
+
+ul.geh_group_select_typeahead_box2 li.addedLst span.srchUIDTxt, ul.geh_group_select_typeahead_dropdown3 li span.userIdLst {
+  display: none; }
+
+#geh_group_select_group_owner_help {
+  margin: 0px; }
+

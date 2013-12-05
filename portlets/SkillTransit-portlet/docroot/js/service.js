@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.tekniti", "com.tekniti.skilltransit.service.service", "SkillTransit-portlet");

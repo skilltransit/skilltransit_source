@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.tekniti.skilltransit.service.model.SkillCategory" />
+	<import class="com.tekniti.skilltransit.service.model.SkillSubCategory" />
+	<import class="com.tekniti.skilltransit.service.model.UserDetails" />
+	<import class="com.tekniti.skilltransit.service.model.UserSkills" />
+	<class name="com.tekniti.skilltransit.service.model.impl.SkillCategoryImpl" table="skill_category">
+		<cache usage="read-write" />
+		<id name="primaryId" column="id" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.tekniti.skilltransit.service.model.impl.SkillSubCategoryImpl" table="skill_subcategory">
+		<cache usage="read-write" />
+		<id name="primaryId" column="id" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.tekniti.skilltransit.service.model.impl.UserDetailsImpl" table="user_details">
+		<cache usage="read-write" />
+		<id name="userId" column="user_id" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hourlyRate" type="com.liferay.portal.dao.orm.hibernate.StringType" column="hourly_rate" />
+		<property name="zipCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="category" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="client" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="commute" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="skill" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="state" type="com.liferay.portal.dao.orm.hibernate.StringType" column="state_" />
+	</class>
+	<class name="com.tekniti.skilltransit.service.model.impl.UserSkillsImpl" table="user_skills">
+		<cache usage="read-write" />
+		<id name="primId" column="id" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="user_id" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+</hibernate-mapping>

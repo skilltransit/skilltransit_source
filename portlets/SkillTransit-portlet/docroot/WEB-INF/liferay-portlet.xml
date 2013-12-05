@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.1.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_1_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>SkillTransit</portlet-name>
+		<icon>/icon.png</icon>
+		<indexer-class>org.tekniti.skilltransit.indexer.SkillIndexer</indexer-class>
+		<friendly-url-mapper-class>com.liferay.portal.kernel.portlet.DefaultFriendlyURLMapper</friendly-url-mapper-class>
+		<friendly-url-mapping>addBillEntry</friendly-url-mapping>
+		<friendly-url-routes>com/tekniti/urlmapper/bill-entry-friendly-url-routes.xml</friendly-url-routes>
+		<asset-renderer-factory>org.tekniti.skilltransit.asset.SkillAssetRendererFactory</asset-renderer-factory>
+		<instanceable>false</instanceable> 
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/jquery-ui.css</header-portlet-css>
+		<header-portlet-css>/css/bootstrap.css</header-portlet-css>
+		<header-portlet-javascript>/js/jquery.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/jquery-ui.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/jquery-validate.js</header-portlet-javascript>
+		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
+		<css-class-wrapper>SkillTransit-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>Dashboard</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>false</instanceable> 
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/jquery-ui.css</header-portlet-css>
+		<header-portlet-css>/css/bootstrap.css</header-portlet-css>
+		<header-portlet-javascript>/js/jquery.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/jquery-ui.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/jquery-validate.js</header-portlet-javascript>
+		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
+		<css-class-wrapper>Dashboard-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+    	<portlet-name>AjaxPortlet</portlet-name>
+    	<icon>/icon.png</icon>
+		<instanceable>false</instanceable>
+		<add-default-resource>true</add-default-resource>
+    </portlet>
+	<role-mapper>
+		<role-name>administrator</role-name>
+		<role-link>Administrator</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>guest</role-name>
+		<role-link>Guest</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>power-user</role-name>
+		<role-link>Power User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>user</role-name>
+		<role-link>User</role-link>
+	</role-mapper>
+</liferay-portlet-app>

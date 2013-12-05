@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.tekniti.skilltransit.service">
+	<author>Hari</author>
+	<namespace>tekniti</namespace>
+	<entity name="SkillCategory" local-service="true" remote-service="true" table="skill_category">
+		<!-- PK fields -->
+		<column name="primaryId" type="long" primary="true"  db-name="id"/>
+		<column name="name" type="String" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="primaryId" />
+		</order>
+		<!-- Finder methods -->
+<!-- 
+		<finder name="Id" return-type="Collection">
+			<finder-column name="id" />
+		</finder> -->
+	</entity>
+	<entity name="SkillSubCategory" local-service="true" remote-service="true" table="skill_subcategory">
+		<!-- PK fields -->
+		<column name="primaryId" type="long" primary="true"  db-name="id"/>
+		<column name="name" type="String" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="primaryId" />
+		</order>
+		<!-- Finder methods -->
+<!-- 
+		<finder name="Id" return-type="Collection">
+			<finder-column name="id" />
+		</finder> -->
+	</entity>
+	<entity name="UserSkills" local-service="true" remote-service="true" table="user_skills">
+		<!-- PK fields -->
+		<column name="primId" type="long" primary="true"  db-name="id"/>
+		<column name="name" type="String" />
+		<column name="user_id" type="long" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="primId" />
+		</order>
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="user_id" />
+		</finder> 
+	</entity>
+	<entity name="UserDetails" local-service="true" remote-service="true" table="user_details">
+		<!-- PK fields -->
+		<column name="userId" type="long" primary="true"  db-name="user_id"/>
+		<column name="hourlyRate" type="String" db-name="hourly_rate" />
+		<column name="zipCode" type="String" />
+		<column name="category" type="String" />
+		<column name="client" type="String" />
+		<column name="commute" type="String" />
+		<column name="skill" type="String" />
+		<column name="state" type="String" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="userId" />
+		</order>
+	</entity>
+</service-builder>

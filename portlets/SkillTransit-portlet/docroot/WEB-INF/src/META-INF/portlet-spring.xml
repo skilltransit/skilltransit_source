@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.tekniti.skilltransit.service.service.SkillCategoryLocalService" class="com.tekniti.skilltransit.service.service.impl.SkillCategoryLocalServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.SkillCategoryService" class="com.tekniti.skilltransit.service.service.impl.SkillCategoryServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.persistence.SkillCategoryPersistence" class="com.tekniti.skilltransit.service.service.persistence.SkillCategoryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.tekniti.skilltransit.service.service.SkillSubCategoryLocalService" class="com.tekniti.skilltransit.service.service.impl.SkillSubCategoryLocalServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.SkillSubCategoryService" class="com.tekniti.skilltransit.service.service.impl.SkillSubCategoryServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.persistence.SkillSubCategoryPersistence" class="com.tekniti.skilltransit.service.service.persistence.SkillSubCategoryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.tekniti.skilltransit.service.service.UserDetailsLocalService" class="com.tekniti.skilltransit.service.service.impl.UserDetailsLocalServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.UserDetailsService" class="com.tekniti.skilltransit.service.service.impl.UserDetailsServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.persistence.UserDetailsPersistence" class="com.tekniti.skilltransit.service.service.persistence.UserDetailsPersistenceImpl" parent="basePersistence" />
+	<bean id="com.tekniti.skilltransit.service.service.UserSkillsLocalService" class="com.tekniti.skilltransit.service.service.impl.UserSkillsLocalServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.UserSkillsService" class="com.tekniti.skilltransit.service.service.impl.UserSkillsServiceImpl" />
+	<bean id="com.tekniti.skilltransit.service.service.persistence.UserSkillsPersistence" class="com.tekniti.skilltransit.service.service.persistence.UserSkillsPersistenceImpl" parent="basePersistence" />
+</beans>

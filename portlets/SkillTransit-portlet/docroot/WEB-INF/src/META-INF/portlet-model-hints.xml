@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.tekniti.skilltransit.service.model.SkillCategory">
+		<field name="primaryId" type="long" />
+		<field name="name" type="String" />
+	</model>
+	<model name="com.tekniti.skilltransit.service.model.SkillSubCategory">
+		<field name="primaryId" type="long" />
+		<field name="name" type="String" />
+	</model>
+	<model name="com.tekniti.skilltransit.service.model.UserDetails">
+		<field name="userId" type="long" />
+		<field name="hourlyRate" type="String" />
+		<field name="zipCode" type="String" />
+		<field name="category" type="String" />
+		<field name="client" type="String" />
+		<field name="commute" type="String" />
+		<field name="skill" type="String" />
+		<field name="state" type="String" />
+	</model>
+	<model name="com.tekniti.skilltransit.service.model.UserSkills">
+		<field name="primId" type="long" />
+		<field name="name" type="String" />
+		<field name="user_id" type="long" />
+	</model>
+</model-hints>

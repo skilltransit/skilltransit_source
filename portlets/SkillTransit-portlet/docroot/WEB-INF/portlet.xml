@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	<portlet>
+		<portlet-name>SkillTransit</portlet-name>
+		<display-name>Skill Transit</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Skill Transit</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>Dashboard</portlet-name>
+		<display-name>Dashboard</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Dashboard</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+    	<portlet-name>AjaxPortlet</portlet-name>
+    	<display-name>Ajax Portlet</display-name>
+    	<portlet-class>com.tekniti.skilltransit.mvcportlet.AjaxPortlet</portlet-class>
+    	<init-param>
+    		<name>view-template</name>
+    		<value>/view.jsp</value>
+    	</init-param>
+    	<init-param>
+			<name>check-auth-token</name>
+			<value>false</value>
+		</init-param>
+    	<expiration-cache>0</expiration-cache>
+    	<supports>
+    		<mime-type>text/html</mime-type>
+    		<portlet-mode>view</portlet-mode>
+    	</supports>
+    	<portlet-info>
+    		<title>Ajax Portlet</title>
+    		<short-title>
+    			AjaxPortlet
+    		</short-title>
+    		<keywords></keywords>
+    	</portlet-info>
+    	<security-role-ref>
+    		<description>guest</description>
+    		<role-name>guest</role-name>
+    		<role-link>Guest</role-link>
+    	</security-role-ref>
+    </portlet>
+</portlet-app>
